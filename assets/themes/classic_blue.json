@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "classic_blue",
+  "order": 0,
+  "name": {
+    "zh": "经典蓝",
+    "en": "Classic Blue"
+  },
+  "light": {
+    "accent": "#0062CC",
+    "ring": "#007AFF",
+    "success": "#248A3D",
+    "tasks": [
+      "#007AFF",
+      "#5856D6",
+      "#FF2D55",
+      "#FF3B30",
+      "#FF9500",
+      "#FFCC00",
+      "#34C759",
+      "#30B0C7"
+    ]
+  },
+  "dark": {
+    "accent": "#5AA9FF",
+    "ring": "#0A84FF",
+    "success": "#30D158",
+    "tasks": [
+      "#0A84FF",
+      "#5E5CE6",
+      "#FF375F",
+      "#FF453A",
+      "#FF9F0A",
+      "#FFD60A",
+      "#30D158",
+      "#40C8E0"
+    ]
+  }
+}

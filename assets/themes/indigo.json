@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "indigo",
+  "order": 1,
+  "name": {
+    "zh": "靛紫",
+    "en": "Indigo"
+  },
+  "light": {
+    "accent": "#4B44C8",
+    "ring": "#5856D6",
+    "success": "#248A3D",
+    "tasks": [
+      "#5856D6",
+      "#AF52DE",
+      "#FF2D55",
+      "#FF9500",
+      "#34C759",
+      "#30B0C7",
+      "#007AFF",
+      "#A2845E"
+    ]
+  },
+  "dark": {
+    "accent": "#9C9AFF",
+    "ring": "#7472F0",
+    "success": "#30D158",
+    "tasks": [
+      "#5E5CE6",
+      "#BF5AF2",
+      "#FF375F",
+      "#FF9F0A",
+      "#30D158",
+      "#40C8E0",
+      "#0A84FF",
+      "#AC8E68"
+    ]
+  }
+}

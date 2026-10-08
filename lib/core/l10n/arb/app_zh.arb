@@ -1,0 +1,237 @@
+{
+  "@@locale": "zh",
+  "appTitle": "每日任务",
+  "tabToday": "今日",
+  "tabStats": "统计",
+  "tabMe": "我的",
+  "greetingMorning": "早上好，{name}",
+  "@greetingMorning": {
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "greetingAfternoon": "下午好，{name}",
+  "@greetingAfternoon": {
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "greetingEvening": "晚上好，{name}",
+  "@greetingEvening": {
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "greetingNight": "夜深了，{name}",
+  "@greetingNight": {
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "todayCompleted": "已完成 {done}/{total}",
+  "@todayCompleted": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "streakDays": "连续 {count} 天",
+  "@streakDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noTasksToday": "今天没有安排任务",
+  "noTasksHint": "点击下方「添加任务」开始规划吧",
+  "addTask": "添加任务",
+  "done": "完成",
+  "undo": "撤销",
+  "edit": "编辑",
+  "cancel": "取消",
+  "save": "保存",
+  "confirm": "确定",
+  "delete": "删除",
+  "progressOf": "{progress} / {target} {unit}",
+  "@progressOf": {
+    "placeholders": {
+      "progress": {
+        "type": "String"
+      },
+      "target": {
+        "type": "String"
+      },
+      "unit": {}
+    }
+  },
+  "setProgressTitle": "输入进度",
+  "setProgressHint": "0 – {target}",
+  "@setProgressHint": {
+    "placeholders": {
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "dayCompleteToast": "今日任务全部完成",
+  "taskCompletedToast": "「{name}」已完成",
+  "@taskCompletedToast": {
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "syncToTodayTitle": "同步到今天？",
+  "syncToTodayMessage": "今天的「{name}」已经生成。是否把修改同步到今天的任务？",
+  "@syncToTodayMessage": {
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "syncToTodayYes": "同步到今天",
+  "syncToTodayNo": "仅从明天起",
+  "statsTitle": "统计",
+  "thisWeek": "本周",
+  "last12Weeks": "最近 12 周",
+  "currentStreak": "当前连续",
+  "longestStreak": "最长连续",
+  "daysUnit": "{count} 天",
+  "@daysUnit": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "perTask": "各项任务",
+  "taskTotal": "累计 {amount} {unit}",
+  "@taskTotal": {
+    "placeholders": {
+      "amount": {},
+      "unit": {}
+    }
+  },
+  "completionRate": "完成率 {percent}%",
+  "@completionRate": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "heatLess": "少",
+  "heatMore": "多",
+  "noStatsYet": "完成第一个任务后这里会显示统计",
+  "meTitle": "我的",
+  "sectionProfile": "个人",
+  "nickname": "昵称",
+  "avatarChar": "头像字符",
+  "sectionAppearance": "外观",
+  "colorScheme": "配色方案",
+  "customAccent": "自定义主题色",
+  "appearanceMode": "深浅色",
+  "modeSystem": "跟随系统",
+  "modeLight": "浅色",
+  "modeDark": "深色",
+  "sectionTasks": "任务管理",
+  "manageTasks": "管理任务",
+  "newTask": "新建任务",
+  "sectionGeneral": "通用",
+  "dayStartHour": "一天开始时间",
+  "dayStartFooter": "在此时间之前打卡仍算作前一天。",
+  "reminder": "提醒通知",
+  "reminderTime": "提醒时间",
+  "reminderBody": "还有 {count} 项任务未完成",
+  "@reminderBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reminderBodyGeneric": "看看今天的任务吧",
+  "reminderPermissionDenied": "未获得通知权限",
+  "sectionData": "数据",
+  "exportBackup": "导出 JSON 备份",
+  "importBackup": "导入 JSON 备份",
+  "resetData": "重置所有数据",
+  "resetConfirmTitle": "确定重置？",
+  "resetConfirmMessage": "所有任务、记录和设置都会被删除，且无法恢复。",
+  "importConfirmTitle": "导入备份？",
+  "importConfirmMessage": "导入会覆盖当前所有数据。",
+  "importSuccess": "导入成功",
+  "importFailed": "导入失败：{error}",
+  "@importFailed": {
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "exportSuccess": "备份已导出",
+  "resetDone": "已重置",
+  "saved": "已保存",
+  "themePreview": "主题预览",
+  "about": "关于",
+  "version": "版本",
+  "activeTasks": "进行中",
+  "pausedTasks": "已暂停",
+  "pause": "暂停",
+  "resume": "恢复",
+  "archive": "删除",
+  "archiveConfirmTitle": "删除「{name}」？",
+  "@archiveConfirmTitle": {
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "archiveConfirmMessage": "任务会被归档，历史记录仍保留在统计中。",
+  "dragToReorder": "按住右侧拖动可排序",
+  "editTask": "编辑任务",
+  "templates": "快速模板",
+  "fieldName": "名称",
+  "fieldNameHint": "例如：背单词",
+  "fieldIcon": "图标",
+  "fieldIconHint": "输入一个字符或选择图标",
+  "fieldColor": "颜色",
+  "fieldType": "类型",
+  "typeCount": "计数",
+  "typeOnce": "一次性",
+  "typeDuration": "时长",
+  "fieldTarget": "每日目标",
+  "fieldStep": "每次打卡",
+  "fieldUnit": "单位",
+  "fieldRepeat": "重复",
+  "repeatDaily": "每天",
+  "repeatWeekdays": "工作日",
+  "repeatCustom": "自选",
+  "weekdayShort1": "一",
+  "weekdayShort2": "二",
+  "weekdayShort3": "三",
+  "weekdayShort4": "四",
+  "weekdayShort5": "五",
+  "weekdayShort6": "六",
+  "weekdayShort7": "日",
+  "errorNameLength": "名称需为 1–20 个字",
+  "errorTarget": "目标至少为 1",
+  "errorStep": "每次打卡需在 1 与目标之间",
+  "errorRepeat": "至少选择一天",
+  "errorNumber": "请输入整数",
+  "unitCount": "个",
+  "unitTimes": "次",
+  "unitMinutes": "分钟",
+  "unitSets": "套",
+  "tplVocabulary": "背单词",
+  "tplExercises": "练习题",
+  "tplReading": "阅读",
+  "tplWorkout": "运动",
+  "tplListening": "听力",
+  "seedVocabulary": "背单词",
+  "seedMath": "数学练习题",
+  "seedReading": "阅读",
+  "seedWorkout": "运动",
+  "defaultNickname": "同学",
+  "widgetTitle": "今日任务"
+}
