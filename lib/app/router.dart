@@ -1,10 +1,11 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../features/settings/me_page.dart';
 import '../features/settings/theme_preview_page.dart';
 import '../features/stats/stats_page.dart';
+import '../features/task_editor/task_editor_page.dart';
 import '../features/today/today_page.dart';
 import 'home_shell.dart';
 
@@ -13,6 +14,8 @@ abstract final class Routes {
   static const stats = '/stats';
   static const me = '/me';
   static const themePreview = '/me/theme-preview';
+  static const newTask = '/editor';
+  static String editTask(int templateId) => '/editor/$templateId';
 }
 
 final rootNavigatorKey = GlobalKey<NavigatorState>();
@@ -22,6 +25,24 @@ final routerProvider = Provider<GoRouter>((ref) {
     navigatorKey: rootNavigatorKey,
     initialLocation: Routes.today,
     routes: [
+      GoRoute(
+        path: Routes.newTask,
+        parentNavigatorKey: rootNavigatorKey,
+        pageBuilder: (context, state) =>
+            const MaterialPage(fullscreenDialog: true, child: TaskEditorPage()),
+        routes: [
+          GoRoute(
+            path: ':id',
+            parentNavigatorKey: rootNavigatorKey,
+            pageBuilder: (context, state) => MaterialPage(
+              fullscreenDialog: true,
+              child: TaskEditorPage(
+                templateId: int.parse(state.pathParameters['id']!),
+              ),
+            ),
+          ),
+        ],
+      ),
       StatefulShellRoute.indexedStack(
         builder: (context, state, shell) => HomeShell(navigationShell: shell),
         branches: [

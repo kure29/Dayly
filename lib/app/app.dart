@@ -6,6 +6,7 @@ import '../core/l10n/l10n.dart';
 import '../core/theme/app_theme.dart';
 import '../core/theme/appearance.dart';
 import 'appearance_controller.dart';
+import 'lifecycle.dart';
 import 'router.dart';
 
 class DailyQuestApp extends ConsumerWidget {
@@ -23,6 +24,8 @@ class DailyQuestApp extends ConsumerWidget {
       darkTheme: AppTheme.build(scheme, Brightness.dark),
       themeMode: mode.themeMode,
       routerConfig: router,
+      builder: (context, child) =>
+          AppLifecycleBinder(child: child ?? const SizedBox.shrink()),
       locale: null,
       supportedLocales: AppLocalizations.supportedLocales,
       localeResolutionCallback: resolveAppLocale,
