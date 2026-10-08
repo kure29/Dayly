@@ -889,6 +889,12 @@ abstract class AppLocalizations {
   /// In zh, this message translates to:
   /// **'今日任务'**
   String get widgetTitle;
+
+  /// No description provided for @widgetStale.
+  ///
+  /// In zh, this message translates to:
+  /// **'打开 App 开始新的一天'**
+  String get widgetStale;
 }
 
 class _AppLocalizationsDelegate

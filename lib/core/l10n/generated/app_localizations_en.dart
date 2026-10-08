@@ -439,4 +439,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get widgetTitle => 'Today';
+
+  @override
+  String get widgetStale => 'Open the app to start the new day';
 }

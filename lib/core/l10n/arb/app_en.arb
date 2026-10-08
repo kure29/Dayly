@@ -131,5 +131,6 @@
   "seedReading": "Reading",
   "seedWorkout": "Workout",
   "defaultNickname": "friend",
-  "widgetTitle": "Today"
+  "widgetTitle": "Today",
+  "widgetStale": "Open the app to start the new day"
 }
