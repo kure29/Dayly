@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../features/settings/manage_tasks_page.dart';
 import '../features/settings/me_page.dart';
 import '../features/settings/theme_preview_page.dart';
 import '../features/stats/stats_page.dart';
@@ -14,6 +15,7 @@ abstract final class Routes {
   static const stats = '/stats';
   static const me = '/me';
   static const themePreview = '/me/theme-preview';
+  static const manageTasks = '/me/tasks';
   static const newTask = '/editor';
   static String editTask(int templateId) => '/editor/$templateId';
 }
@@ -68,6 +70,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                 path: Routes.me,
                 builder: (context, state) => const MePage(),
                 routes: [
+                  GoRoute(
+                    path: 'tasks',
+                    parentNavigatorKey: rootNavigatorKey,
+                    builder: (context, state) => const ManageTasksPage(),
+                  ),
                   GoRoute(
                     path: 'theme-preview',
                     parentNavigatorKey: rootNavigatorKey,
