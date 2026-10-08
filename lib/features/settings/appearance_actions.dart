@@ -10,11 +10,11 @@ import '../../core/theme/scheme_definition.dart';
 import '../../core/ui/app_sheet.dart';
 import 'scheme_picker.dart';
 
-void setScheme(WidgetRef ref, String id) =>
-    ref.read(appearanceProvider.notifier).setScheme(id);
+Future<void> setScheme(WidgetRef ref, String id) =>
+    ref.read(settingsControllerProvider).setScheme(id);
 
-void setBrightnessMode(WidgetRef ref, BrightnessMode mode) =>
-    ref.read(appearanceProvider.notifier).setMode(mode);
+Future<void> setBrightnessMode(WidgetRef ref, BrightnessMode mode) =>
+    ref.read(settingsControllerProvider).setMode(mode);
 
 /// The generated custom scheme if the user has picked a custom accent.
 SchemeDefinition? customSchemeOf(WidgetRef ref) {
@@ -35,7 +35,7 @@ Future<void> pickCustomAccent(BuildContext context, WidgetRef ref) async {
     builder: (sheetContext) => AccentColorPicker(
       initial: initial,
       onDone: (color) {
-        ref.read(appearanceProvider.notifier).setCustomAccent(color.toARGB32());
+        ref.read(settingsControllerProvider).setCustomAccent(color.toARGB32());
         Navigator.of(sheetContext).pop();
       },
     ),

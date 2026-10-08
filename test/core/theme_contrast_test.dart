@@ -93,11 +93,17 @@ void main() {
 
   test('contrast ratio matches WCAG reference values', () {
     expect(
-      ColorUtils.contrastRatio(const Color(0xFF000000), const Color(0xFFFFFFFF)),
+      ColorUtils.contrastRatio(
+        const Color(0xFF000000),
+        const Color(0xFFFFFFFF),
+      ),
       closeTo(21, 0.001),
     );
     expect(
-      ColorUtils.contrastRatio(const Color(0xFF777777), const Color(0xFFFFFFFF)),
+      ColorUtils.contrastRatio(
+        const Color(0xFF777777),
+        const Color(0xFFFFFFFF),
+      ),
       closeTo(4.48, 0.01),
     );
   });

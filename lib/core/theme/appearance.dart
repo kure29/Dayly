@@ -3,23 +3,16 @@ import 'package:flutter/material.dart';
 import 'custom_scheme.dart';
 import 'scheme_definition.dart';
 import 'theme_registry.dart';
+import '../../domain/models.dart';
 
-/// User-selectable light/dark behavior. Stored by name.
-enum BrightnessMode {
-  system,
-  light,
-  dark;
+export '../../domain/models.dart' show BrightnessMode;
 
+extension BrightnessModeTheme on BrightnessMode {
   ThemeMode get themeMode => switch (this) {
     BrightnessMode.system => ThemeMode.system,
     BrightnessMode.light => ThemeMode.light,
     BrightnessMode.dark => ThemeMode.dark,
   };
-
-  static BrightnessMode parse(String? name) => BrightnessMode.values.firstWhere(
-    (m) => m.name == name,
-    orElse: () => BrightnessMode.system,
-  );
 }
 
 /// Resolves the active [SchemeDefinition] for a scheme id and an optional
