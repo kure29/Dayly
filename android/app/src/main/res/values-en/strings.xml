@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Daily Quest</string>
+    <string name="widget_small_description">Today\'s progress ring</string>
+    <string name="widget_medium_description">Check in right from your home screen</string>
+    <string name="widget_large_description">Progress of all of today\'s tasks</string>
+</resources>

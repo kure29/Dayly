@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "warm_orange",
+  "order": 4,
+  "name": {
+    "zh": "暖橙",
+    "en": "Warm Orange"
+  },
+  "light": {
+    "accent": "#A34700",
+    "ring": "#D96A00",
+    "success": "#248A3D",
+    "tasks": [
+      "#FF9500",
+      "#FF3B30",
+      "#FFCC00",
+      "#A2845E",
+      "#34C759",
+      "#30B0C7",
+      "#007AFF",
+      "#AF52DE"
+    ]
+  },
+  "dark": {
+    "accent": "#FF9F0A",
+    "ring": "#FF9F0A",
+    "success": "#30D158",
+    "tasks": [
+      "#FF9F0A",
+      "#FF453A",
+      "#FFD60A",
+      "#AC8E68",
+      "#30D158",
+      "#40C8E0",
+      "#0A84FF",
+      "#BF5AF2"
+    ]
+  }
+}

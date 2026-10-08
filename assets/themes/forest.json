@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "forest",
+  "order": 3,
+  "name": {
+    "zh": "森绿",
+    "en": "Forest"
+  },
+  "light": {
+    "accent": "#1A6E33",
+    "ring": "#2A9248",
+    "success": "#0E7C86",
+    "tasks": [
+      "#34C759",
+      "#00A86B",
+      "#30B0C7",
+      "#8E9A3B",
+      "#A2845E",
+      "#FF9500",
+      "#007AFF",
+      "#5856D6"
+    ]
+  },
+  "dark": {
+    "accent": "#4CD27A",
+    "ring": "#32C25A",
+    "success": "#40C8E0",
+    "tasks": [
+      "#30D158",
+      "#2FD39A",
+      "#40C8E0",
+      "#B5C25A",
+      "#AC8E68",
+      "#FF9F0A",
+      "#0A84FF",
+      "#5E5CE6"
+    ]
+  }
+}

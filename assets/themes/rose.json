@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "rose",
+  "order": 2,
+  "name": {
+    "zh": "玫红",
+    "en": "Rose"
+  },
+  "light": {
+    "accent": "#C2185B",
+    "ring": "#E5225B",
+    "success": "#248A3D",
+    "tasks": [
+      "#FF2D55",
+      "#FF6B81",
+      "#AF52DE",
+      "#FF9500",
+      "#FFCC00",
+      "#34C759",
+      "#30B0C7",
+      "#5856D6"
+    ]
+  },
+  "dark": {
+    "accent": "#FF7A93",
+    "ring": "#FF375F",
+    "success": "#30D158",
+    "tasks": [
+      "#FF375F",
+      "#FF7A93",
+      "#BF5AF2",
+      "#FF9F0A",
+      "#FFD60A",
+      "#30D158",
+      "#40C8E0",
+      "#5E5CE6"
+    ]
+  }
+}
