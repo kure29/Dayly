@@ -28,6 +28,10 @@ Future<ProviderContainer> bootstrap({
   final l10n = lookupAppLocalizations(locale);
   final service = container.read(taskServiceProvider);
   await service.seedIfNeeded(buildSeedContent(l10n, service.now()));
+  // Riverpod pauses providers nobody listens to, so `read(...future)` alone
+  // would never complete. Keep a listener for the app's lifetime (the widget
+  // tree watches settings anyway) and wait for the first value.
+  container.listen(settingsProvider, (_, _) {});
   await container.read(settingsProvider.future);
   return container;
 }
