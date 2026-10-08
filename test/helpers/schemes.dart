@@ -9,7 +9,10 @@ import 'package:dailyquest/core/theme/theme_registry.dart';
 ThemeRegistry loadRegistryFromDisk() {
   final dir = Directory('assets/themes');
   final files =
-      dir.listSync().whereType<File>().where((f) => f.path.endsWith('.json'))
+      dir
+          .listSync()
+          .whereType<File>()
+          .where((f) => f.path.endsWith('.json'))
           .toList()
         ..sort((a, b) => a.path.compareTo(b.path));
   return ThemeRegistry(

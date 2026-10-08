@@ -8,7 +8,10 @@ void main() {
   final registry = loadRegistryFromDisk();
 
   test('unknown ids fall back to the default scheme', () {
-    expect(registry.resolve('does-not-exist').id, ThemeRegistry.defaultSchemeId);
+    expect(
+      registry.resolve('does-not-exist').id,
+      ThemeRegistry.defaultSchemeId,
+    );
     expect(registry.resolve(null).id, ThemeRegistry.defaultSchemeId);
   });
 
