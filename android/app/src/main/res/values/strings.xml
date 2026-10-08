@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">每日任务</string>
+    <string name="widget_small_description">今日进度环</string>
+    <string name="widget_medium_description">在桌面直接打卡</string>
+    <string name="widget_large_description">今日全部任务进度</string>
 </resources>

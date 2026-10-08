@@ -233,5 +233,6 @@
   "seedReading": "阅读",
   "seedWorkout": "运动",
   "defaultNickname": "同学",
-  "widgetTitle": "今日任务"
+  "widgetTitle": "今日任务",
+  "widgetStale": "打开 App 开始新的一天"
 }

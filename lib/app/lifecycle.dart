@@ -4,15 +4,19 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../domain/models.dart';
+import '../widgets_bridge/widget_sync.dart';
 import 'providers.dart';
 
 /// Callbacks run when the app starts and whenever it returns to the
 /// foreground (e.g. merging widget check-ins). Registered by feature
-/// modules via [foregroundTasksProvider] overrides/extensions.
+/// modules via [foregroundTasksProvider].
 typedef ForegroundTask = Future<void> Function(ProviderContainer container);
 
 final foregroundTasksProvider = Provider<List<ForegroundTask>>(
-  (ref) => const [],
+  (ref) => [
+    // Merge check-ins made on home-screen widgets while we were away.
+    (container) => container.read(widgetSyncServiceProvider).mergePending(),
+  ],
 );
 
 /// Keeps "today" correct: bumps [dayTickProvider] on resume and at the next

@@ -6,6 +6,7 @@ import '../core/l10n/l10n.dart';
 import '../core/theme/app_theme.dart';
 import '../core/theme/appearance.dart';
 import '../features/settings/reminders.dart';
+import '../widgets_bridge/widget_sync.dart';
 import 'appearance_controller.dart';
 import 'lifecycle.dart';
 import 'router.dart';
@@ -19,6 +20,7 @@ class DailyQuestApp extends ConsumerWidget {
     final mode = ref.watch(appearanceProvider.select((a) => a.mode));
     final router = ref.watch(routerProvider);
     ref.watch(reminderSyncProvider);
+    ref.watch(widgetSnapshotSyncProvider);
     return MaterialApp.router(
       onGenerateTitle: (context) => context.l10n.appTitle,
       debugShowCheckedModeBanner: false,

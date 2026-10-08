@@ -436,4 +436,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get widgetTitle => '今日任务';
+
+  @override
+  String get widgetStale => '打开 App 开始新的一天';
 }
